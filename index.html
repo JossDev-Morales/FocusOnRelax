@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/resource/ClipartKey_1229230.png" type="image/x-icon">
+    <title>FocusOnRelax</title>
+</head>
+<body class="tema-blacksky-3" >
+   <nav class="sidebar tema-blacksky-1">
+        <div class="itemside home-s tema-blacksky-2"> <img src="/resource/home.png" alt="Home"></div>
+        <div class="itemside relax-s tema-blacksky-2"> <img src="/resource/relax.png" alt="FocusOnRelaxation"></div>
+        <div class="itemside Alarm-s tema-blacksky-2"> <img src="/resource/alarma.png" alt="Alarm"></div>
+        <div class="itemside toDo-s tema-blacksky-2"> <img src="/resource/check.png" alt="ToDo"></div>
+        <div class="itemside conf-s tema-blacksky-2"> <img src="/resource/web-management.png" alt="conf"></div>
+   </nav>
+   <!-- topbar -->
+   <nav class="topbar home-b tema-blacksky-1 focus">
+    <div class="themeicon"><img src="/resource/cloud.png" alt=""><div class="relojH reloj"></div></div>
+    <div class="fecha"><div class="estacion1"></div><img id="imgestacion1" alt="Estacion del Año"></div>
+  </nav>
+   <nav class="topbar relax-b tema-blacksky-1">
+    <div class="themeicon"><img src="/resource/cloud.png" alt=""><div class="relojR reloj"></div></div>
+    <div class="fecha"><div class="estacion2"></div><img id="imgestacion2" alt="Estacion del Año"></div>
+  </nav>
+   <nav class="topbar ALARM-b tema-blacksky-1">
+    <div class="themeicon">
+      <img src="/resource/cloud.png" alt="">
+      <div class="relojA reloj"></div>
+    </div>
+    <div class="fecha">
+      <div class="estacion3"></div>
+      <img id="imgestacion3" alt="Estacion del Año">
+    </div>
+
+    <div class="sets">
+      <label for="NameAlarm" class="NameAlarm">Nombre</label>
+      <input type="text" id="NameAlarm" class="NameAlarm-i"placeholder="Tu Alarma" minlength="5" maxlength="15">
+      <div class="selects-A horaA">
+        <div class="arrowU UPH"><img src="/resource/flecha-hacia-abajo.png" alt=""></div>
+        <input type="text" class="HoraA-i"  maxlength="2" >
+        <div class="arrowD DOH"><img src="/resource/flecha-hacia-abajo.png" alt=""></div>
+      </div>
+      <div class="selects-A MinutosA">
+        <div class="arrowU UPM"><img src="/resource/flecha-hacia-abajo.png" alt=""></div>
+        <input type="text" class="MinutosA-i"  maxlength="2">
+        <div class="arrowD DOM"><img src="/resource/flecha-hacia-abajo.png" alt=""></div>
+      </div>
+      <div class="selects-A TimeA">
+        <div class="arrowU UPT"><img src="/resource/flecha-hacia-abajo.png" alt=""></div>
+        <input type="text" class="TimeA-i"  maxlength="2">
+        <div class="arrowD DOT"><img src="/resource/flecha-hacia-abajo.png" alt=""></div></div>
+      <div class="buttonA-V">Add</div>
+    </div>
+  </nav>
+   <nav class="topbar toDo-b tema-blacksky-1">
+    <div class="themeicon"><img src="/resource/cloud.png" alt=""><div class="relojT reloj"></div></div>
+    <div class="fecha">
+    <div class="estacion4"></div><img id="imgestacion4" alt="Estacion del Año"></div>
+    <div class="setsT">
+      <div class="T-item">
+        <div class="type">
+        <div class="typeT">Tipo</div>
+        <div class="typeS">
+            <ul>
+              <li class="Normal">Normal</li>
+              <li class="Importante">Importante</li>
+              <li class="Urgente">Urgente</li>
+            </ul>
+      </div>
+    </div>
+    <input type="text" class="itemtext">
+    <input type="button" value="Add" class="btn-add"></div></div>
+  </nav>
+   <!-- content -->
+  
+   <main class="main home-m tema-blacksky-2 focus">
+     
+   </main>
+   <main class="main FOR-m tema-blacksky-2">
+     <nav>for</nav>
+   </main>
+   <main class="main Alarm-m tema-blacksky-2">
+    <div class="Alarmas">
+     <!-- <div class="Alarma">
+      <div class="Talarma">Mi Alarma Bro Nm</div>
+      <div class="Hora">6:45</div><div class="AmPm">AM</div>
+      <div class="Button-Alerta">More</div>
+      <div class="Alerta">
+
+        <div class="Talerta">Mi Alarma Bro Nmms</div>
+        <textarea  cols="30" rows="10"></textarea>
+        <div class="img"><img src="/resource/alarma.png" alt=""></div>
+
+      </div>
+      <div class="EliminarAlarma">Eliminar</div>
+     </div> -->
+     <div class="noitems focus">No hay items</div>
+    </div>
+   </main>
+   <ul class="main toDo-m tema-blacksky-2 ul-do">
+    
+  
+       <div class="empty">No hay Tareas pendientes</div>
+       
+   </ul>
+   <div class="alert Active">
+    <div class="alert-Name"></div>
+    <div class="alert-img"></div>
+    <div class="stopalert">Parar Alarma</div>
+    <audio id="Alarma-Audio" loop>
+      <source src="/resource/justdisapear.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+   <!-- config -->
+   
+    <div class="configuracion"></div>
+    
+    <script src="/JS/Alarmas.js"></script>
+    <script src="/JS/actions.js" type="module"></script>
+    <script src="/JS/main.js" type="module"></script>
+    <script src="/JS/timer.js"></script>
+    <script src="/JS/index.js"></script>
+</body>
+</html>
